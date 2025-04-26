@@ -14,8 +14,8 @@ function IncomeForm() {
 
     axios
       .post("http://localhost:3001/api/income/add", data)
-        .then((res) => {
-          window.location.reload();
+      .then((res) => {
+        window.location.reload();
         navigate("/"); // Navigate after successful post
       })
       .catch((err) => {
